@@ -1,0 +1,13 @@
+<div *ngIf="contact">
+  <div class="grid grid-gap">
+    <div class="cell right ">
+      <app-picture [picture]="contact.picture"
+                   [showThumbnailAsFallback]="true">
+      </app-picture>
+    </div>
+    <div class="cell cell-shrink">
+      <h3>{{contact.preName}}&nbsp{{contact.sirName}}</h3>
+
+    </div>
+  </div>
+</div>
